@@ -11,16 +11,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> #list comprehension.
 >>> #Let’s say you want to make the same list as before, but you only want to multiply the numbers that can be divided by 2
 >>> c = []
->>> y=[2,5,8,12,23]
+>>> y=[2,7,8,12,25]
 >>> c= [n*n for n in y:
   File "<stdin>", line 1
     c= [n*n for n in y:
                       ^
-SyntaxError: invalid syntax
->>> c= [n*n for n in y: if n%2==0
-  File "<stdin>", line 1
-    c= [n*n for n in y: if n%2==0
-                      ^
+
 SyntaxError: invalid syntax
 >>> c= [n*n for n in y; if n%2==0
   File "<stdin>", line 1
@@ -41,11 +37,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print(c)?
   File "<stdin>", line 1
     c= [n*n for n in y if n%2==0]:print(c)
                                  ^
-SyntaxError: invalid syntax
->>> c= [n*n for n in y if n%2==0]:print(c)
-  File "<stdin>", line 1
-    c= [n*n for n in y if n%2==0]:print(c)
-                                 ^
+
 SyntaxError: invalid syntax
 >>> Note that you can also use list comprehension to loop over a list. Here, the results are already printed out without you having to pass print():
   File "<stdin>", line 1
